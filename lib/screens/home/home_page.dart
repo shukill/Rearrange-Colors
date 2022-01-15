@@ -4,6 +4,7 @@ import 'package:rearrange/core/helpers.dart';
 import 'package:rearrange/core/model/my_colors.dart';
 import 'package:rearrange/screens/home/controller/home_controller.dart';
 import 'package:rearrange/screens/home/widgets/grid_card.dart';
+import 'package:rearrange/screens/result/result_page.dart';
 import 'package:reorderable_grid_view/reorderable_grid_view.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -62,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ElevatedButton(
                       onPressed: () {
                         controller.enabled.value = false;
+                        Get.to(() => ResultPage());
                       },
                       style: ElevatedButton.styleFrom(
                         primary: Helpers.green,
