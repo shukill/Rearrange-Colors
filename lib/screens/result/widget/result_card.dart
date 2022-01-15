@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rearrange/core/model/my_colors.dart';
-import 'package:rearrange/screens/result/helpers/result_helpers.dart';
+import '../../../core/model/my_colors.dart';
+import '../helpers/result_helpers.dart';
 
 class ResultCard extends StatelessWidget {
   const ResultCard({

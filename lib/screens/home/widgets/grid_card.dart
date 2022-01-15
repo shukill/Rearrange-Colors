@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rearrange/core/model/my_colors.dart';
-import 'package:rearrange/screens/result/result_page.dart';
+
+import '../../../core/model/my_colors.dart';
+import '../../result/result_page.dart';
 
 class GridCard extends StatelessWidget {
   const GridCard({
