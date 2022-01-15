@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rearrange/core/model/my_colors.dart';
 import 'package:rearrange/screens/result/helpers/result_helpers.dart';
 
 class ResultCard extends StatelessWidget {
@@ -7,7 +8,7 @@ class ResultCard extends StatelessWidget {
     required this.color,
     required this.index,
   }) : super(key: key);
-  final Color color;
+  final MyColor color;
   final int index;
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class ResultCard extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const SizedBox(
               width: 20,
@@ -27,8 +29,27 @@ class ResultCard extends StatelessWidget {
               key: key,
               width: ResultHelpers.resultCardWidth,
               height: ResultHelpers.resultCardHeight,
-              color: color,
+              color: color.color,
             ),
+            const SizedBox(
+              width: 40,
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${color.points} pts',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(
+                  height: 8,
+                ),
+                Text(color.name),
+              ],
+            )
           ],
         ),
       ),

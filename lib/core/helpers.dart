@@ -11,7 +11,7 @@ abstract class Helpers {
   static const Color pink = Colors.pinkAccent;
   static const Color teal = Colors.teal;
 
-  static const initialColorList = [
+  static const List<Color> initialColorList = [
     red,
     amber,
     blue,
@@ -22,4 +22,7 @@ abstract class Helpers {
     pink,
     teal,
   ];
+
+  static const String appBarTitle = 'Rearrange Color';
+  static const String sumbit = 'Submit';
 }

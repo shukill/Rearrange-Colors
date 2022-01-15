@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Rearrange',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
       home: const MyHomePage(),
     );
